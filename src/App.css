@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .container {
   /* background-color: slateblue; */
   background-color: #fff;
@@ -10,11 +13,12 @@
   flex-direction: column;
   gap: 20px;
 }
-.cal-container{
-  width: 100%;
+.cal-container {
+  width: auto;
   display: flex;
   align-items: center;
-  
+  justify-content: center;
+  margin: auto;
   flex-direction: column;
 }
 .container .title {
@@ -22,12 +26,13 @@
 }
 .container .title .txt {
   font-size: 2.3rem;
+  text-align: center;
   color: #222;
 }
-.display{
-  width: 17.5%;
+.display {
+  width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px;
@@ -35,21 +40,21 @@
   background-color: #444;
   color: #fff;
 }
-.display .inp{
+.display .inp {
   font-size: 1.2rem;
   font-weight: 700;
 }
-.display .out{
+.display .out {
   font-size: 2.4rem;
   font-weight: bold;
 }
-.btn-container{
+.btn-container {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(5,1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 2px;
 }
-.btn-container .btn{
+.btn-container .btn {
   background-color: slateblue;
   color: #fff;
   font-size: 1.3rem;
@@ -59,15 +64,15 @@
   text-align: center;
   font-weight: bold;
 }
-.equal{
+.equal {
   background-color: green !important;
 }
-.op{
+.op {
   background-color: orangered !important;
 }
-.red{
+.red {
   background-color: #ff2200 !important;
 }
-.del{
+.del {
   background-color: #223 !important;
 }
